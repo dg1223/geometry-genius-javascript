@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="m-5">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/input.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Blog</title>
+  </head>
+  <header>
+    <div class="navbar bg-slate-200 flex justify-between px-6">
+      <div class="block">
+        <h2 class="text-4xl font-semibold opacity-80">Interactive</h2>
+        <h3 class="text-2xl opacity-60">Geometric Genius</h3>
+      </div>
+      <div class="flex-none">
+        <button id="btn-blog-blog" class="btn-blog btn btn-primary">
+          Blog
+        </button>
+      </div>
+    </div>
+  </header>
+  <body>
+    <!-- FAQ -->
+    <section class="mt-5">
+      <div
+        tabindex="0"
+        class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box"
+      >
+        <div class="collapse-title text-xl font-bold">
+          What is DOM? what is the purpose of DOM?
+        </div>
+        <div class="collapse-content">
+          <p>
+            DOM stands for Document Object Model. It represents a tree stucture
+            for HTML elements consisting of nodes and objects which in turn
+            represents the entire page.DOM allows us to display web pages on a
+            browser. It also lets us modify the content of the page.
+          </p>
+        </div>
+      </div>
+      <div
+        tabindex="1"
+        class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mb-5"
+      >
+        <div class="collapse-title text-xl font-bold">
+          How will you select elements from the DOM?
+        </div>
+        <div class="collapse-content">
+          <p>
+            We can select elements from the DOM in 6 ways which are the
+            following: <br /><br />
+            getElementById() - get HTML element by its id <br />
+            getElementsByTagName() - get HTML element by its tag name <br />
+            getElementsByClassName() - get HTML element by its class name <br />
+            getElementsByName() - get HTML element by its name (attribute)
+            <br />
+            querySelector() - it returns the first HTML element of the selector
+            <br />
+            that is queried <br />
+            querySelectorAll() - it returns all of the HTML elements of the
+            selector that is queried
+          </p>
+        </div>
+      </div>
+      <div
+        tabindex="2"
+        class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mb-5"
+      >
+        <div class="collapse-title text-xl font-bold">
+          What is event bubble?
+        </div>
+        <div class="collapse-content">
+          <p>
+            The event bubble is, in simple terms, propagation of JS events.
+            After event listeners are dispatched, the event trickles down from
+            one element to another through the bubble.
+          </p>
+        </div>
+      </div>
+      <div
+        tabindex="3"
+        class="collapse collapse-plus border border-base-300 bg-base-100 rounded-box mb-5"
+      >
+        <div class="collapse-title text-xl font-bold">
+          What is a callback function? What is it used for?
+        </div>
+        <div class="collapse-content">
+          <p>
+            A callback function is a function that is passed as an argument to
+            another function. It is used to perform operations that are
+            otherwise repetitive in nature within other functions.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="./src/utils.js"></script>
+    <script src="./src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="m-5">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/input.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Geometry Genius</title>
+  </head>
+  <header>
+    <div class="navbar bg-slate-200 flex justify-between px-6">
+      <div class="block">
+        <h2 class="text-4xl font-semibold opacity-80">Interactive</h2>
+        <h3 class="text-2xl opacity-60">Geometric Genius</h3>
+      </div>
+      <div class="flex-none">
+        <button id="btn-blog-index" class="btn-blog btn btn-primary">
+          Blog
+        </button>
+      </div>
+    </div>
+  </header>
+  <body>
+    <main class="m-5">
+      <section class="px-12 flex flex-row gap-4">
+        <div class="grid grid-cols-3 gap-4 w-full">
+          <!-- ------------------------------------- -->
+          <!-- Card 1 -->
+          <div
+            id="card-1"
+            class="card w-full mx-auto bg-base-100 border block p-7"
+          >
+            <figure>
+              <img src="/images/triangle.png" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold">Triangle</h2>
+              <p class="text-sm py-2">Area (A) = 0.5 x b x h</p>
+              <div class="input flex">
+                <div class="flex">
+                  <input
+                    id="triangle-base"
+                    class="input-item bg-slate-200"
+                    type="number"
+                    min="0"
+                    placeholder="b"
+                  />
+                  <p>cm</p>
+                </div>
+                <div class="flex">
+                  <input
+                    id="triangle-height"
+                    class="input-item bg-slate-200"
+                    type="number"
+                    min="0"
+                    placeholder="h"
+                  />
+                  <p>cm</p>
+                </div>
+              </div>
+              <div class="card-actions justify-center">
+                <button
+                  id="btn-triangle"
+                  class="btn btn-primary btn-calculate mt-4"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            id="card-2"
+            class="card w-full mx-auto bg-base-100 border block p-7"
+          >
+            <figure>
+              <img src="/images/rectangle.png" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-xl font-semibold">Rectangle</h2>
+              <p>Area (A) = w x l</p>
+              <div class="input flex">
+                <div class="flex">
+                  <input
+                    id="rectangle-width"
+                    class="input-item bg-slate-200"
+                    type="number"
+                    min="0"
+                    placeholder="w"
+                  />
+                  <p>cm</p>
+                </div>
+                <div class="flex">
+                  <input
+                    id="rectangle-length"
+                    class="input-item bg-slate-200"
+                    type="number"
+                    min="0"
+                    placeholder="l"
+                  />
+                  <p>cm</p>
+                </div>
+              </div>
+              <div class="card-actions justify-center">
+                <button
+                  id="btn-rectangle"
+                  class="btn btn-primary btn-calculate mt-4"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            id="card-3"
+            class="card w-full mx-auto bg-base-100 border block p-7"
+          >
+            <figure>
+              <img src="/images/parallelogram.png" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-xl font-semibold">Parallelogram</h2>
+              <p class="text-sm py-2">Area (A) = b x h</p>
+              <p>b = 10cm, h = 12cm</p>
+              <div class="card-actions justify-center">
+                <button
+                  id="btn-parallelogram"
+                  class="btn btn-primary btn-calculate mt-4"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            id="card-4"
+            class="card w-full mx-auto bg-base-100 border block p-7"
+          >
+            <figure>
+              <img src="/images/rhombus.png" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-xl font-semibold">Rhombus</h2>
+              <p class="text-sm py-2">
+                Area (A) = 0.5 x d<sub>1</sub> x d <sub>2</sub>
+              </p>
+              <p>d<sub>1</sub> = 16cm, d<sub>2</sub> = 8cm</p>
+              <div class="card-actions justify-center">
+                <button
+                  id="btn-rhombus"
+                  class="btn btn-primary btn-calculate mt-4"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            id="card-5"
+            class="card w-full mx-auto bg-base-100 border block p-7"
+          >
+            <figure>
+              <img src="/images/pentagon.png" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-xl font-semibold">Pentagon</h2>
+              <p class="text-sm py-2">Area (A) = 0.5 x p x b</p>
+              <p>p = 6cm, b = 10cm</p>
+              <div class="card-actions justify-center">
+                <button
+                  id="btn-pentagon"
+                  class="btn btn-primary btn-calculate mt-4"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div
+            id="card-6"
+            class="card w-full mx-auto bg-base-100 border block p-7"
+          >
+            <figure>
+              <img src="/images/ellipse.png" alt="" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-xl font-semibold">Ellipse</h2>
+              <p class="text-sm py-2">Area (A) = πab</p>
+              <p>a = 10cm, b = 4cm</p>
+              <div class="card-actions justify-center">
+                <button
+                  id="btn-ellipse"
+                  class="btn btn-primary btn-calculate mt-4"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Area calculation -->
+        <div class="area">
+          <div class="card w-full border block overflow-y-auto">
+            <div class="card-body">
+              <h2 class="area-text text-md font-semibold">Area Calculation</h2>
+              <div>
+                <table id="area-table">
+                  <tbody id="table-body" class="">
+                    <!-- <tr>
+                      <td class="text-sm">${id}</td>
+                      <td class="text-sm">${element}</td>
+                      <td class="text-sm">${area}<span>cm</span><sup>2</sup></td>
+                      <td><button class="btn btn-info ">Convert to m<sup>2</sup></button></td>                    
+                    </tr> -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./src/utils.js"></script>
+    <script src="./src/main.js"></script>
+  </body>
+</html>

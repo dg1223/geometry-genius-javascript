@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* navbar styles */
+.navbar .btn {
+  width: 8rem;
+}
+
+/* card styles */
+.card-actions .btn {
+  width: 15vw;
+}
+.card-body {
+  align-items: center;
+}
+.card-body .input {
+  justify-content: center;
+}
+.card-body .input-item {
+  width: 3vw;
+}
+.card-body .area-text {
+  text-decoration: underline;
+}
+.card-body .input p {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* misc styles */
+figure {
+  height: 50%;
+}
+/* .area {
+  max-width: 30%;
+} */
+.btn {
+  text-transform: none !important;
+}
+/* table styles */
+tbody {
+  font-size: small;
+}
+tr {
+  display: flex;
+  gap: 45px;
+}
+tr button {
+  width: 7vw;
+  height: 2vw;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+}
+.row-title {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+}
+#area-table {
+  table-layout: fixed;
+}
+#area-table td {
+  width: 23%;
+}
